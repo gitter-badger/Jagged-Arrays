@@ -1,6 +1,8 @@
 /*
 Jagged-Arrays
 =============
+
+[![Join the chat at https://gitter.im/nachi1490/Jagged-Arrays](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nachi1490/Jagged-Arrays?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Objective:
 I have implemented a custom data structure called as JaggedArrays in C++. A JaggedArray is a 1D array of n bins, and each bin stores a collection of elements of templated type T. This data structure is helpful to ensure high performance for applications needing frequent read and write access to an organizational information. The JaggedArray class that is implemented has two fundamental representation modes: unpacked and packed. In the unpacked representation, the JaggedArray stores an array of integers containing the counts of how many elements are in each bin and an array of pointers to arrays that hold these elements. In the packed representation, the JaggedArray stores an array of offsets for the start of each bin. These offsets refer to a single large array that stores all of the elements grouped by bin but all packed into the same large array.  We can convert a JaggedArray from unpacked to packed mode by calling the pack member function and similarly convert from packed to unpacked by calling unpack. 
 
